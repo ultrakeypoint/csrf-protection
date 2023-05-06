@@ -1,0 +1,20 @@
+<div class="app">
+  <form
+    [formGroup]="fg"
+    (submit)="requestDelivery()">
+    <h2>Lucky Store</h2>
+    <img
+      src="../assets/hamburger.png"
+      width="300px" />
+    <div class="">햄최몇?</div>
+    <small>(한끼동안 햄버거를 최대 몇개까지 드실 수 있으실까요?)</small>
+    <div>
+      <input
+        formControlName="count"
+        type="number" />
+      <label>개</label>
+    </div>
+    <button type="submit">주문 요청</button>
+    <div class="tip">This page is an example page for CSRF protection.</div>
+  </form>
+</div>
