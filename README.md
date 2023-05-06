@@ -16,6 +16,8 @@ Java LuckStoreApplication.java
 
 ![image](https://user-images.githubusercontent.com/73173310/236589000-1da636cd-8940-4ee6-bf5c-bdc4a836b648.png)
 
+![image](https://user-images.githubusercontent.com/73173310/236589659-2b0775ac-142c-4b6a-8468-1cdfd8b41999.png)
+
 ### Angular 
 1. Install Node Packages
 ```terminal
