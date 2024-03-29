@@ -3,6 +3,7 @@ import {FormBuilder, Validators} from '@angular/forms';
 import {OrderService} from './services/order.service';
 import {ToastrService} from 'ngx-toastr';
 import {take} from 'rxjs';
+import {WebsocketService} from './services/WebsocketService';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +11,6 @@ import {take} from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  constructor(
-    private fb: FormBuilder,
-    private os: OrderService,
-    private ts: ToastrService
-  ) {}
-
   public fg = this.fb.group({
     count: [0, [Validators.required]],
   });
@@ -38,4 +33,11 @@ export class AppComponent implements OnInit {
         error: (r) => console.log(r),
       });
   }
+
+  constructor(
+    private fb: FormBuilder,
+    private os: OrderService,
+    private ts: ToastrService,
+    private ws: WebsocketService
+  ) {}
 }

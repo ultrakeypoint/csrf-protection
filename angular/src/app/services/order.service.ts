@@ -1,6 +1,6 @@
-import {environment as env} from '../../environments/environment';
+import {environment as env} from '@/environments/environment';
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpParams, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import * as moment from 'moment';
 
 interface Hamburger {
