@@ -37,3 +37,8 @@ $ npm run dev
 # UI
 ![image](https://user-images.githubusercontent.com/73173310/236589060-9e6de7d6-4d53-4dc3-a3a9-1cdbbab24e14.png)
 
+# RabbitMQ Docker Install
+docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -p 15674:15674 -p 15675:15675 --restart=unless-stopped -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3.8-management
+
+# RabbitMQ Plugin
+rabbitmq-plugins enable rabbitmq_tracing rabbitmq_web_stomp
